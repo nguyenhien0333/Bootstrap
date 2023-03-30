@@ -1,11 +1,5 @@
 
-#title {
-    background-color: #ff4c68;
-    /* height: 929px; */
-    height: 100vh; 
-    /* z-index: 2; */
-    overflow: hidden;
-}
+
 
 body {
     font-family: 'Montserrat' ;
@@ -13,8 +7,10 @@ body {
 
 /* Feature Section */
 #features{
-    margin-top: 8%;
-    margin-bottom: 8%;
+    background-color: #FFFFFF;
+    position: relative;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 
 #features h3 {
@@ -63,12 +59,34 @@ padding-bottom: 4.5rem;
     margin: 5% 3% 5% 0%;
 }
 
-/* Title Image */
+/* Title Section */
+
+#title {
+    background-color: #ff4c68;
+    /* height: 929px; */
+    height: 100vh; 
+    /* z-index: 2; */
+    /* overflow: hidden; */
+}
+
 .title-image{
     position: relative;
-    top: -50px ;
     width: 80%;
     transform: rotate(25deg);
+}
+
+@media (max-width: 980px){
+    #title {
+        margin-top: 1rem;
+        text-align: center;
+        height:fit-content
+    }
+
+    .title-image{
+        margin-top:1.5rem;
+        margin-bottom:3.8rem;
+        transform: rotate(0) ;
+    }
 }
 
 /* Terminal Section */
@@ -93,6 +111,7 @@ padding-bottom: 4.5rem;
     margin: 1rem;
 }
 
+/* Press section */
 #press{
     background-color: #ff4c68;
     padding-bottom: 3%;
@@ -100,5 +119,77 @@ padding-bottom: 4.5rem;
 
 .press-logo{
     width: 15%;
-    margin: 1rem 1rem 3rem;
+    margin: 1rem 2rem 5rem;
+}
+
+
+/* Pricing section */
+#pricing{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+#pricing h2,h3{
+    font-weight: 600;
+}
+
+#pricing p{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#pricing button{
+    font-size: 1.5rem;
+}
+
+
+/* Call to Action Section */
+#cta{
+    background-color: #ff4c68;
+    padding-top: 6%;
+    padding-bottom: 4%;
+}
+
+#cta-title{
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+#cta button{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#cta .btn-dark .fa-lg{
+    vertical-align: -4px;
+}
+
+#cta .btn-outline-light .fa-lg{
+    vertical-align: -3px;
+}
+
+
+/* Footer setion */
+
+#footer{
+    background-color: #FFFFFF;
+    padding-top: 8%;
+    /* padding-bottom: 8%; */
+}
+
+#footer a{
+    margin-right: 2%;
+}
+
+#footer p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #8f8f8f;
+    padding-right: 1rem;
+}
+
+#social-media-links{
+    padding-bottom: 2rem;
 }
